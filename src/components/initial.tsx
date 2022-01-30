@@ -34,8 +34,9 @@ export const ReactForm = () => {
     setLoader(true);
     const searchQuery = searchRef.current?.value,
       apiKey = process.env.REACT_APP_API_KEY;
+    console.log(searchQuery)
     if (!!searchQuery && !!apiKey) {
-      const response = await window.fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchQuery}`)
+      const response = await window.fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchQuery}&limit=16`)
       const obj = await response.json()
       setData(obj.data)
     }
@@ -102,15 +103,13 @@ export const ReactForm = () => {
             bottom: 10,
             right: 10,
           }}>Loading...</div>
-          : !data.length ? <Fragment/> : <div>
-            <h2>Total found: {data.length}, showing {data.slice(0, 16).length}</h2>
-            <div style={{
+          : !data.length ? <Fragment/> : <div style={{
               display: `grid`,
               gridTemplateColumns: `repeat(4, 1fr)`,
               gridTemplateRows: `repeat(4, 1fr)`,
               gridGap: 10,
             }}>
-              {data.slice(0, 16).map((d: any) => {
+              {data.map((d: any) => {
                 return (
                   <figure key={d.id} style={{
                     width: `100%`,
@@ -121,7 +120,6 @@ export const ReactForm = () => {
                   </figure>
                 )
               })}
-            </div>
           </div>
       }
     </div>
