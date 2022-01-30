@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ShopUp-FrontEnd-Assignment/static/css/main.e6c13ad2.css",
-    "main.js": "/ShopUp-FrontEnd-Assignment/static/js/main.0185d4b9.js",
+    "main.js": "/ShopUp-FrontEnd-Assignment/static/js/main.4a540883.js",
     "static/js/787.51c16e5b.chunk.js": "/ShopUp-FrontEnd-Assignment/static/js/787.51c16e5b.chunk.js",
     "index.html": "/ShopUp-FrontEnd-Assignment/index.html",
     "main.e6c13ad2.css.map": "/ShopUp-FrontEnd-Assignment/static/css/main.e6c13ad2.css.map",
-    "main.0185d4b9.js.map": "/ShopUp-FrontEnd-Assignment/static/js/main.0185d4b9.js.map",
+    "main.4a540883.js.map": "/ShopUp-FrontEnd-Assignment/static/js/main.4a540883.js.map",
     "787.51c16e5b.chunk.js.map": "/ShopUp-FrontEnd-Assignment/static/js/787.51c16e5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0185d4b9.js"
+    "static/js/main.4a540883.js"
   ]
 }
